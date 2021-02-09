@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/logo.png" sizes="128x128">
+</head>
+<body class="portada">   
+        <header>
+                <nav class="menu">
+                    
+                        <a href="#" class="logo"><img class="img-logo" src="img/logo.png" alt=" "></a>
+
+                        <ul>
+
+                            <li class="item-1"><a>Inicio</a></li>
+                            <li class="item-2"><a href="inicio-sesion.html">Taberna</a></li>
+                            <li class="item-3"><a href="inicio-sesion.html">Donaciones</a></li>
+                            <li class="item-4"><a href="conocenos.html">Conócenos</a></li>
+                            <li class="item-5"><a href="inicio-sesion.html"><i class="fas fa-user"></i></a></li>
+
+                        </ul>
+                   
+                </nav>
+        </header>
+
+        <main>
+        
+        <div class="introduccion">
+            <h2 class="titulo">TITULO</h2>
+            
+            <p class="parrafos">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            
+            <p class="parrafos">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            
+            <p class="parrafos">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            
+            <div class="boton"><a><p class="parrafos">Empezar</p></a></div>
+        </div>
+
+        <!-- Uso el loop para una vez finalice vuelva a reproducirse y el controls para que salga 
+        los controles de sonido y reproducción -->
+        <audio id="audio"  autoplay loop preload="auto" controls>
+            <!--Lo pongo primero para que sea el predefinido ya que tiene una frecuencia buena para el ser humano que seria de 22khz-->
+            <source src="audio/Purple Planet Music - Epiphany (2_13) 120bpm.wav">
+            <!--Eligo ogg por delante de mp3 aunq sea el preferido por muchos, porque ofrece mejor calidad a menor tamaño de archivo-->
+            <source src="audio/Purple Planet Music - Epiphany (2_13) 120bpm.ogg">
+            
+            <source src="audio/Purple Planet Music - Epiphany (2_13) 120bpm.mp3">
+            
+            
+        </audio>
+
+        <!-- Creamos la etiqueta video con la propiedad controls para poder manejar el video, ya sea pausandolo o poniendolo en grande
+        Dentro de la etiqueta video usamos source y ponemos el enlace al video, asi nos permitira que si queremos añadir mas videos
+        en el futuro solo deberemos añadir mas etiquetas source, tambien le damos un tamaño con width y height-->
+        <video id="video" controls preload="auto" width="400" height="325">
+            <!--Usamos avi para videos pequeños y de alta calidad-->
+            <source src="video/castillo.avi" >
+            <!-- Es uno de los mas populares hoy en dia-->
+            <source src="video/castillo.mp4" >
+            <!--Facil de usar en cualquier plataforma apple-->
+            <source src="video/castillo.mov" >
+        </video>
+
+    </main>
+    <footer class="pie">
+        <ul>
+            <li class="piep"><a href="aviso-legal.html">Aviso legal</a></li>
+            <li class="piep"><a href="#">Pólitica de privacidad</a></li>
+            <li class="piep"><a href="#">Pólitica de cookies</a></li>
+        </ul>
+    </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    
+</body>
+</html>

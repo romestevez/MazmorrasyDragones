@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/logo.png" sizes="128x128">
+</head>
+<body class="portada-login">
+
+    <header>
+        <nav class="menu">
+
+            <a href="#" class="logo"><img class="img-logo" src="img/logo.png" alt=" "></a>
+
+            <ul>
+
+                <li class="item"><a href="juego.html">Inicio</a></li>
+                <li class="item"><a href="logros.html">Taberna</a></li>
+                <li class="item"><a href="donaciones.html">Donaciones</a></li>
+                <li class="item"><a href="conocenos.html">Conócenos</a></li>
+                <li class="item"><a href="cuenta.html"><i class="fas fa-user"></i></a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        
+
+        <form class="formu">
+            <legend class="titu-form">Login / Sign Up</legend>
+
+            <input type="text" class="campo-f" name="usuario" id="usuario" pattern="[a-zA-Z0-9]" placeholder="Usuario:" required>
+
+            <input type="password" class="campo-f" name="password" id="password" pattern=".{8,}" placeholder="Contraseña:" required>
+
+            <div class="politica">
+                <input type="checkbox" name="aceptar-politicas" required>
+                <p class="acep-politica">Acepto las condiciones y <a href="aviso-legal.html">políticas de privacidad</a></p>
+            </div>
+
+            <input type="submit"  name="iniciarsesion" id="iniciarsesion" value="Iniciar Sesión">
+
+            <div class="pie-form">
+                <a href="recuperar-contraseña.html"><p>Recuperar Contraseña</p></a>
+
+                <a href="registro.html"><p>Registrarse</p></a>
+            </div>    
+        </form>
+
+    </main>
+    <footer class="pie">
+        <ul>
+            <li class="piep"><a href="aviso-legal.html">Aviso legal</a></li>
+            <li class="piep"><a href="#">Pólitica de privacidad</a></li>
+            <li class="piep"><a href="#">Pólitica de cookies</a></li>
+        </ul>
+    </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+</body>
+</html>
